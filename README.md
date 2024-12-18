@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+Armstrong Number Checker with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements an Armstrong Number Checker using React, where users can check if a number is an Armstrong number and save results. It includes a logout functionality and dynamically displays a welcome message with the user's name.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+1. Login Integration
 
-### `npm start`
+Login functionality is managed in the App.js file.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Username is passed from App.js to the Armstrong.js component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Armstrong Number Checker
 
-### `npm test`
+Users can input a number to check if it is an Armstrong number.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Armstrong numbers are calculated by summing each digit raised to the power of the total number of digits.
 
-### `npm run build`
+3. Save and Display Armstrong Numbers
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Valid Armstrong numbers are saved in a list during the session.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The list of saved numbers is dynamically displayed below the checker.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Logout Functionality
 
-### `npm run eject`
+A logout button allows users to log out and return to the login page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Dynamic Welcome Message
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The username from login is displayed in the welcome message on the Armstrong checker page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+File Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. App.js
 
-## Learn More
+Handles:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Login functionality.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Managing authentication state (isLoggedIn and username).
 
-### Code Splitting
+Rendering the Armstrong.js component post-login.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Armstrong.js
 
-### Analyzing the Bundle Size
+Core functionality includes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Accepting a number input from the user.
 
-### Making a Progressive Web App
+Checking if the input is an Armstrong number.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Saving valid Armstrong numbers.
 
-### Advanced Configuration
+Displaying saved Armstrong numbers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Providing logout functionality.
 
-### Deployment
+3. App.css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contains the styling for:
 
-### `npm run build` fails to minify
+Form components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Buttons (Submit, Logout).
+
+Layout for saved numbers and messages.
+
+How to Run
+
+Clone the Repository:
+
+git clone <repository-url>
+cd <repository-folder>
+
+Install Dependencies:
+
+npm install
+
+Start the Development Server:
+
+npm start
+
+The application will be accessible at http://localhost:3000.
+
+Usage
+
+Login
+
+Login via the interface in App.js using your username and password.
+
+Armstrong Number Checker
+
+Enter a number in the input field.
+
+Click "Check Armstrong".
+
+If valid, the number will be added to the list of saved Armstrong numbers.
+
+Logout
+
+Click the "Logout" button at the top-right corner to return to the login page.
+
+Example Armstrong Numbers
+
+153: 1^3 + 5^3 + 3^3 = 153
+
+9474: 9^4 + 4^4 + 7^4 + 4^4 = 9474
+
+Styling Highlights
+
+Buttons
+
+Submit Button: Styled for clear visibility and usability.
+
+Logout Button: Positioned at the top-right corner for easy access.
+
+Saved Numbers Section
+
+Displays a list of saved Armstrong numbers dynamically.
+
+Styled with proper spacing and alignment.
+
+Future Improvements
+
+Add persistent storage (e.g., local storage or a database).
+
+Extend functionality to include a history of checked numbers.
+
+Improve validation and error handling.
+
+Technologies Used
+
+React: For building the user interface.
+
+CSS: For styling the application.
+
+License
+
+This project is open-source and available under the MIT License.
+
