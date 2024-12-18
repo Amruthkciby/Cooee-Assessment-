@@ -1,0 +1,118 @@
+/* Existing CSS for form-container and others */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #555;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  padding: 10px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #e53935;
+}
+
+/* View Saved Numbers Button Styling */
+.view-saved-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.view-saved-btn:hover {
+  background-color: #45a049;
+}
+
+/* Saved Armstrong Numbers Section */
+.saved-numbers {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.saved-numbers ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.saved-numbers li {
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
