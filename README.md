@@ -135,7 +135,3 @@ React: For building the user interface.
 
 CSS: For styling the application.
 
-License
-
-This project is open-source and available under the MIT License.
-
